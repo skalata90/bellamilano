@@ -76,27 +76,11 @@ $('#gallery').lightCarousel();
 
 		//console.log(el);
 
-	});
-
-	//wysiwyg-----------------------------------
-	
-	// $(document).on("DOMNodeInserted",function(e){
-
-	// 	if($(e.target).hasClass("editable")){
-
-	// 		tinymce.editors = [];
-
-	// 		tinymce.init({selector:'.editable textarea'});
-
-	// 	}
-
-	// });
-
-        
+	});     
 
 //========================== MAPS =============================
 
-function initMap() {
+
 
 	
 	var style = 
@@ -244,9 +228,9 @@ function initMap() {
                 }
             });
 
-            var infowindow1 = new google.maps.InfoWindow({
-                content: '<div id="content">You are here</div>'
-            });
+            // var infowindow1 = new google.maps.InfoWindow({
+            //     content: '<div id="content">You are here</div>'
+            // });
 
             var marker2 = new google.maps.Marker({
                 position: home,
@@ -269,40 +253,6 @@ function initMap() {
        console.log("Functionality not available");
     }
 
-}
 
-//============ VALIDATION ===============
-
-
-
-	// $("#form").validate({
-	// 	rules:{
-	// 		name: {
-	// 			required: true
-	// 		},
-	// 		email: {
-	// 			required: true,
-	// 			email: true
-	// 		},
-	// 		message: {
-	// 			required: true
-	// 		}
-	// 	},
-	// 	messages: {
-	// 		email: {
-	// 			required: "Please enter your Email!",
-	// 			email: "Please enter your Email!"
-	// 		},
-	// 		name: {
-	// 			required: "Please enter your Name!"
-	// 		}
-	// 	},
-	// 	highlight: function(element , errorClass){
-	// 		$(element).addClass("animated shake");
-	// 		$(element).one("animationend",function(){
-	// 			$(this).removeClass("animated shake");
-	// 		});
-	// 	}
-	// });
 
 });

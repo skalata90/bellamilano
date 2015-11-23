@@ -1,9 +1,1270 @@
-.container {
-  width: 123px; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.second {
-  background-color: red;
-  font-size: 1px;
-  background-size: cover; }
+body {
+  font-family: 'Poiret One', cursive; }
+
+.error {
+  color: red;
+  text-align: center; }
+
+.hideIt {
+  display: none; }
+
+.hidechef {
+  display: none; }
+
+.graf {
+  display: none; }
+
+#menu_pic {
+  display: none; }
+
+#midlepic, .midletext, .wineAd {
+  display: none; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 6em;
+  border-bottom: thin solid rgba(0, 0, 0, 0.6);
+  -webkit-flex: 0 0 content;
+  -ms-flex: 0 0 content;
+  flex: 0 0 content;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  header .bars {
+    -webkit-flex: 0 0 3em;
+    -ms-flex: 0 0 3em;
+    flex: 0 0 3em;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2.5em;
+    margin-right: 0.5em; }
+    header .bars i {
+      line-height: 1.3em;
+      color: #c5b358; }
+  header #nav {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    list-style-type: none; }
+  header #nav.show {
+    height: 20em; }
+  header #nav li {
+    height: 2.5em; }
+  header #nav li a {
+    display: block;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.3em;
+    color: #c5b358;
+    text-decoration: none; }
+  header .logo {
+    width: 12em;
+    height: 5em;
+    margin-left: 0.5em;
+    margin-top: 1em; }
+    header .logo img {
+      width: 100%;
+      height: 100%; }
+
+main .contbook {
+  max-height: 65vh; }
+
+main section:nth-child(1) {
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/contact.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  main section:nth-child(1) #JiSlider {
+    height: 100vh;
+    width: 100%; }
+    main section:nth-child(1) #JiSlider ul #slide1 {
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/booking.jpg) !important;
+      background-position: center; }
+    main section:nth-child(1) #JiSlider ul #slide2 {
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img2.jpg);
+      background-position: center; }
+    main section:nth-child(1) #JiSlider ul #slide3 {
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img1.1.jpg);
+      background-position: center; }
+    main section:nth-child(1) #JiSlider ul #slide4 {
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/gal4.jpg);
+      background-position: center; }
+  main section:nth-child(1) #maintext {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 3;
+    max-width: 100%;
+    font-size: 2.5em;
+    color: white;
+    text-align: center; }
+    main section:nth-child(1) #maintext a {
+      text-decoration: none;
+      font-family: arial;
+      font-size: 0.8em;
+      border: 2px solid white;
+      font-weight: normal;
+      color: white; }
+    main section:nth-child(1) #maintext span {
+      font-size: 0.5em; }
+
+main section:nth-child(2) {
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  main section:nth-child(2) #text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.3em; }
+    main section:nth-child(2) #text h1 {
+      color: #c5b358; }
+    main section:nth-child(2) #text p {
+      color: #707c7a; }
+  main section:nth-child(2) #plate {
+    min-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22em; }
+    main section:nth-child(2) #plate img {
+      width: 100%; }
+
+main #menu {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  main #menu a {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0.5em;
+    min-width: 100%;
+    color: #707c7a; }
+  main #menu a:hover {
+    color: blue; }
+  main #menu .resfood {
+    margin-top: 1em;
+    height: auto; }
+    main #menu .resfood h2 {
+      margin: 0;
+      width: 100%;
+      height: 1.5em;
+      text-align: center;
+      border-bottom: thin solid #707c7a;
+      color: #707c7a; }
+    main #menu .resfood .menuitem {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0.5em;
+      padding: 0; }
+      main #menu .resfood .menuitem h3 {
+        width: 80%;
+        height: 1.2em;
+        color: #c5b358; }
+      main #menu .resfood .menuitem span {
+        height: 1.5em; }
+        main #menu .resfood .menuitem span i {
+          color: #c5b358; }
+      main #menu .resfood .menuitem p {
+        width: 100%;
+        height: auto; }
+        main #menu .resfood .menuitem p a {
+          color: #f00000; }
+  main #menu h1 {
+    margin: 0;
+    padding-top: 0.5em;
+    width: 100%;
+    height: 1em;
+    text-align: center;
+    font-size: 2.2em;
+    color: #c5b358; }
+
+main #contact {
+  min-height: 60vh; }
+  main #contact h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #c5b358; }
+  main #contact p {
+    font-size: 1.3em;
+    margin-left: 1em;
+    color: #707c7a; }
+  main #contact form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 1em auto; }
+    main #contact form fieldset {
+      width: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main #contact form fieldset input, main #contact form fieldset textarea {
+        width: 90%;
+        margin: 0 auto; }
+      main #contact form fieldset textarea {
+        margin-top: 1em; }
+    main #contact form button {
+      background-color: #c5b358; }
+  main #contact .error {
+    color: red;
+    width: 15em; }
+
+main #map {
+  height: 40vh;
+  background-color: #707c7a; }
+
+main #booking {
+  min-height: 70vh; }
+  main #booking h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #c5b358; }
+  main #booking p {
+    text-align: center;
+    font-size: 1.3em;
+    color: #707c7a; }
+  main #booking form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1em; }
+    main #booking form fieldset {
+      width: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main #booking form fieldset input {
+        width: 90%;
+        margin: 1em auto 0; }
+    main #booking form button {
+      background-color: #c5b358; }
+  main #booking #gallery {
+    margin: 2em auto;
+    height: auto; }
+  main #booking .error {
+    color: red; }
+
+main #events {
+  min-height: 70vh;
+  text-align: center;
+  margin-top: 2em; }
+  main #events h2 {
+    width: 100%;
+    margin-bottom: 1em;
+    color: #c5b358;
+    font-size: 1.8em; }
+  main #events p {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    font-size: 1.2em; }
+  main #events #private, main #events #wedding {
+    margin-bottom: 2em; }
+    main #events #private .textprivate, main #events #wedding .textprivate {
+      width: 80%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 0 auto; }
+      main #events #private .textprivate .evenpic, main #events #wedding .textprivate .evenpic {
+        width: 100%;
+        height: 100%;
+        margin: auto 0; }
+        main #events #private .textprivate .evenpic img, main #events #wedding .textprivate .evenpic img {
+          width: 100%;
+          height: 100%; }
+
+main .pagination {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: no-wrap;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  font-size: 1.5em;
+  width: 5em;
+  margin: 0 auto; }
+  main .pagination li, main .pagination a {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none; }
+
+main #reviews {
+  min-height: 100vh; }
+  main #reviews .heading1 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    main #reviews .heading1 h1 {
+      width: 100%;
+      margin: 1em 0 0 0;
+      text-align: center;
+      color: #c5b358; }
+    main #reviews .heading1 a {
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.4em;
+      margin: 0;
+      width: 100%;
+      color: #707c7a; }
+    main #reviews .heading1 a:hover {
+      color: blue; }
+  main #reviews .review {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    border-bottom: thin solid #707c7a;
+    border-top: thin solid #707c7a; }
+    main #reviews .review h2 {
+      width: 100%;
+      color: #c5b358; }
+      main #reviews .review h2 span {
+        color: rgba(0, 0, 200, 0.7);
+        font-size: 1em; }
+    main #reviews .review p {
+      font-size: 1.2em; }
+    main #reviews .review a {
+      text-decoration: none;
+      font-size: 1.3em;
+      border: thin solid #707c7a;
+      color: #f00000; }
+
+main #logReg {
+  min-height: 50vh; }
+  main #logReg #regoForm, main #logReg #loginForm {
+    margin-bottom: 2em; }
+    main #logReg #regoForm form, main #logReg #loginForm form {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main #logReg #regoForm form fieldset, main #logReg #loginForm form fieldset {
+        width: 100%; }
+        main #logReg #regoForm form fieldset legend, main #logReg #loginForm form fieldset legend {
+          text-align: center;
+          font-size: 1.2em; }
+        main #logReg #regoForm form fieldset input, main #logReg #loginForm form fieldset input {
+          width: 90%;
+          margin: 0.3em auto 0 auto; }
+      main #logReg #regoForm form button, main #logReg #loginForm form button {
+        margin: 0 auto;
+        background-color: #c5b358; }
+  main #logReg h1 {
+    text-align: center;
+    color: #c5b358; }
+  main #logReg .error {
+    color: red;
+    font-size: 1.3em; }
+
+main #addReview {
+  min-height: 40vh; }
+  main #addReview h1 {
+    text-align: center;
+    color: #c5b358; }
+  main #addReview h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    text-align: center;
+    color: #707c7a; }
+  main #addReview .addForm form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+    main #addReview .addForm form fieldset {
+      width: 100%; }
+      main #addReview .addForm form fieldset textarea {
+        width: 90%;
+        height: 6em;
+        margin: 0 auto; }
+    main #addReview .addForm form button {
+      width: 8em;
+      margin: 0 auto;
+      background-color: #c5b358; }
+  main #addReview .error {
+    color: red;
+    font-size: 1.3em; }
+
+main #profile {
+  min-height: 50vh;
+  text-align: center; }
+  main #profile h1 {
+    text-align: center;
+    color: #c5b358; }
+  main #profile h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    text-align: center;
+    color: #707c7a; }
+  main #profile .userPro {
+    margin-top: 2em; }
+    main #profile .userPro h2 {
+      color: #c5b358; }
+    main #profile .userPro h5 {
+      font-size: 1.3em;
+      color: rgba(0, 0, 200, 0.7); }
+    main #profile .userPro h4 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      color: #707c7a; }
+
+main #adminPage {
+  min-height: 70vh; }
+  main #adminPage h1 {
+    text-align: center;
+    color: #c5b358; }
+  main #adminPage h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    text-align: center;
+    color: #707c7a; }
+  main #adminPage .addItem {
+    margin: 2em 0; }
+    main #adminPage .addItem form {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main #adminPage .addItem form fieldset {
+        width: 100%; }
+        main #adminPage .addItem form fieldset input, main #adminPage .addItem form fieldset select {
+          width: 95%;
+          margin: 0.5em auto; }
+    main #adminPage .addItem .error {
+      color: red;
+      font-size: 1.3em; }
+  main #adminPage .removeUser .userInfo {
+    border: thin solid grey;
+    text-align: center;
+    margin: 2em auto;
+    width: 80%; }
+    main #adminPage .removeUser .userInfo h5 {
+      color: #c5b358;
+      font-size: 1.3em; }
+    main #adminPage .removeUser .userInfo a {
+      font-size: 1.3em;
+      text-decoration: none;
+      color: #f00000; }
+
+main section:nth-child(3) {
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-image: url(../img/img3.2.png);
+  background-position: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  main section:nth-child(3) h1 {
+    width: 100%;
+    height: 2.5em;
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 2.5em;
+    color: #c5b358; }
+  main section:nth-child(3) #weeksp {
+    width: 100%;
+    height: 25em;
+    text-align: center;
+    margin-top: 1em; }
+    main section:nth-child(3) #weeksp img {
+      width: 100%; }
+  main section:nth-child(3) h2 {
+    color: #c5b358;
+    font-size: 1.8em; }
+  main section:nth-child(3) p {
+    font-size: 1.2em; }
+
+footer {
+  min-height: 40vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  background-color: black;
+  color: white;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+  footer .foot {
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    min-width: 10em;
+    height: 10em;
+    margin-top: 1em; }
+  footer p {
+    width: 100%; }
+  footer a {
+    text-decoration: none;
+    color: #c5b358; }
+
+@media only screen and (min-width: 24em) {
+  * {
+    outline: 1px solid red; }
+  .graf {
+    display: block;
+    margin: auto; }
+  header .bars {
+    margin-right: 2.5em; }
+  header .logo {
+    margin-left: 2.5em;
+    margin-top: 1em; }
+  main section:nth-child(1) #maintext {
+    top: 35%;
+    left: 0;
+    right: 60%;
+    z-index: 10;
+    width: 100%;
+    font-size: 2.6em;
+    color: white;
+    text-align: center; }
+    main section:nth-child(1) #maintext a {
+      font-size: 0.6em; }
+  main #menu a {
+    margin-top: 2em;
+    font-size: 1.5em; }
+  main #menu .resfood {
+    margin-top: 3em;
+    height: auto; }
+    main #menu .resfood h2 {
+      font-size: 1.8em; }
+    main #menu .resfood .menuitem {
+      height: auto; }
+      main #menu .resfood .menuitem h3 {
+        width: 80%;
+        margin-left: 0.5em;
+        font-size: 1.3em; }
+      main #menu .resfood .menuitem span {
+        font-size: 1.2em; }
+      main #menu .resfood .menuitem p {
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+        font-size: 1.2em; }
+        main #menu .resfood .menuitem p a {
+          font-size: 1em; }
+  main #menu h1 {
+    margin: 0;
+    padding-top: 0.5em;
+    width: 100%;
+    height: 1em;
+    text-align: center;
+    font-size: 2.2em;
+    color: #c5b358; }
+  main #contact {
+    min-height: 60vh; }
+    main #contact form fieldset input, main #contact form fieldset textarea {
+      width: 80%;
+      margin: 0 auto; }
+    main #contact form fieldset textarea {
+      margin-top: 1em; }
+  main #booking {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    main #booking h1 {
+      min-width: 100%; }
+    main #booking form {
+      min-width: 100%; }
+      main #booking form fieldset input {
+        width: 80%;
+        margin: 1em auto 0; }
+      main #booking form button {
+        max-height: 2em;
+        width: 14em; }
+    main #booking #gallery {
+      margin: 2em auto;
+      width: 80%;
+      height: auto; }
+  main #events #private .textprivate .evenpic, main #events #wedding .textprivate .evenpic {
+    width: 100%;
+    height: 100%;
+    margin: auto 0; }
+    main #events #private .textprivate .evenpic img, main #events #wedding .textprivate .evenpic img {
+      width: 100%;
+      height: 100%; }
+  main .pagination {
+    width: 7em; }
+  main #reviews .heading1 h1 {
+    font-size: 2.2em; }
+  main #reviews .heading1 a {
+    font-size: 1.6em; }
+  main #reviews .review h2 {
+    font-size: 1.8em; }
+    main #reviews .review h2 span {
+      font-size: 0.8em; }
+  main #reviews .review p {
+    font-size: 1.3em; }
+  main #reviews .review a {
+    color: rgba(230, 0, 0, 0.7); }
+  main #reviews .socialM {
+    width: 80%;
+    height: 30em;
+    margin: 0 auto 1em auto;
+    outline: 2px solid black; }
+  main #logReg #regoForm form fieldset legend, main #logReg #loginForm form fieldset legend {
+    font-size: 1.3em; }
+  main #logReg #regoForm form fieldset input, main #logReg #loginForm form fieldset input {
+    width: 60%; }
+  main #logReg h1 {
+    font-size: 2.5em; }
+  main #addReview {
+    min-height: 60vh; }
+    main #addReview h1 {
+      font-size: 2.3em; }
+    main #addReview h2 {
+      margin-bottom: 0.5em;
+      font-size: 1.5em; }
+    main #addReview .addForm form fieldset textarea {
+      width: 80%;
+      height: 7em; }
+  main #adminPage {
+    min-height: 70vh; }
+    main #adminPage h1 {
+      font-size: 2.4em; }
+    main #adminPage h2 {
+      font-size: 1.6em; }
+    main #adminPage .addItem {
+      margin: 2em 0; }
+      main #adminPage .addItem form fieldset input, main #adminPage .addItem form fieldset select {
+        width: 60%; }
+    main #adminPage .removeUser .userInfo {
+      width: 60%; }
+      main #adminPage .removeUser .userInfo h5 {
+        font-size: 1.5em; }
+      main #adminPage .removeUser .userInfo h4 {
+        font-size: 1.3em; }
+  main section:nth-child(2) #text {
+    min-width: 80%;
+    margin-bottom: 1em; }
+  main section:nth-child(2) #plate {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20em; }
+    main section:nth-child(2) #plate img {
+      width: 100%;
+      height: 100%; }
+  main section:nth-child(3) h1 {
+    height: 3.5em; }
+  main section:nth-child(3) #weeksp {
+    width: 30em;
+    max-height: 50em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    main section:nth-child(3) #weeksp img {
+      width: 80%; }
+  main section:nth-child(3) h2 {
+    font-size: 2em; }
+  footer .foot {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    min-width: 10em;
+    height: 10em;
+    margin-top: 1em; }
+  footer p {
+    width: 100%; } }
+
+@media only screen and (max-width: 48em) {
+  .animated {
+    -webkit-animation-name: none !important;
+    animation-name: none !important; } }
+
+@media only screen and (min-width: 48em) {
+  * {
+    outline: 1px solid green; }
+  .hideIt {
+    display: block; }
+  header .bars {
+    margin-right: 7em; }
+  header .logo {
+    margin-left: 7em;
+    margin-top: 1em; }
+  main section:nth-child(1) #maintext {
+    top: 30%;
+    left: 0;
+    right: 60%;
+    z-index: 10;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    text-align: center; }
+  main #menu {
+    min-height: 100vh;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    main #menu .resfood {
+      margin-bottom: 2em;
+      -webkit-flex: 0 0 45%;
+      -ms-flex: 0 0 45%;
+      flex: 0 0 45%;
+      height: auto; }
+      main #menu .resfood h2 {
+        font-size: 2em; }
+      main #menu .resfood .menuitem {
+        height: auto; }
+        main #menu .resfood .menuitem h3 {
+          width: 75%;
+          margin-left: 0em;
+          font-size: 1.5em; }
+        main #menu .resfood .menuitem span {
+          font-size: 1.5em; }
+        main #menu .resfood .menuitem p {
+          margin-left: 0em;
+          font-size: 1.5em; }
+    main #menu h1 {
+      font-size: 2.8em; }
+  main #contact {
+    min-height: 50vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 2em; }
+    main #contact h1 {
+      width: 100%;
+      font-size: 2.5em; }
+    main #contact p {
+      width: 50%;
+      font-size: 1.5em;
+      margin-left: 1em; }
+    main #contact form {
+      margin-right: 1em;
+      margin-top: 0;
+      width: 40%; }
+      main #contact form fieldset {
+        margin: auto 0; }
+        main #contact form fieldset input, main #contact form fieldset textarea {
+          width: 100%;
+          margin: 0 auto; }
+        main #contact form fieldset textarea {
+          margin-top: 1em; }
+      main #contact form button {
+        max-height: 2em;
+        width: 10em; }
+  main #booking {
+    min-height: 60vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    main #booking h1 {
+      min-width: 100%; }
+    main #booking p {
+      margin: 0 auto;
+      width: 90%; }
+    main #booking form {
+      min-width: 50%;
+      margin-bottom: 2em; }
+      main #booking form fieldset {
+        margin: auto 0; }
+        main #booking form fieldset input {
+          width: 80%;
+          margin: 1em auto 0; }
+      main #booking form button {
+        max-height: 2em;
+        width: 10em; }
+    main #booking #gallery {
+      margin: 2em auto;
+      width: 40%;
+      height: auto; }
+    main #booking .error {
+      color: red; }
+  main #midelepic {
+    display: block;
+    min-height: 20vh;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-image: url(../img/img3.2.png);
+    background-position: center; }
+    main #midelepic .midletext {
+      display: block;
+      text-align: center;
+      width: 100%;
+      color: #707c7a; }
+  main #events {
+    min-height: 70vh;
+    text-align: center;
+    margin-top: 2em; }
+    main #events h2 {
+      width: 100%;
+      margin-bottom: 1em;
+      color: #c5b358;
+      font-size: 1.8em; }
+    main #events p {
+      width: 40%;
+      height: 100%;
+      margin: auto 0;
+      font-size: 1.2em; }
+    main #events #private, main #events #wedding {
+      margin-bottom: 4em; }
+      main #events #private .textprivate, main #events #wedding .textprivate {
+        width: 80%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 0 auto; }
+        main #events #private .textprivate .evenpic, main #events #wedding .textprivate .evenpic {
+          width: 50%;
+          height: 100%;
+          margin: auto 0; }
+          main #events #private .textprivate .evenpic img, main #events #wedding .textprivate .evenpic img {
+            width: 100%;
+            height: 100%; }
+  main #reviews .review {
+    width: 90%;
+    margin: 0 auto 2em auto; }
+    main #reviews .review h2 {
+      font-size: 2em; }
+    main #reviews .review p {
+      font-size: 1.5em; }
+  main #reviews .socialM {
+    width: 60%; }
+  main #logReg {
+    min-height: 50vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    main #logReg #regoForm, main #logReg #loginForm {
+      width: 45%; }
+      main #logReg #regoForm form fieldset, main #logReg #loginForm form fieldset {
+        width: 100%; }
+        main #logReg #regoForm form fieldset legend, main #logReg #loginForm form fieldset legend {
+          font-size: 1.5em; }
+        main #logReg #regoForm form fieldset input, main #logReg #loginForm form fieldset input {
+          width: 90%;
+          margin: 0.3em auto 0 auto; }
+      main #logReg #regoForm form button, main #logReg #loginForm form button {
+        margin: 0 auto; }
+    main #logReg h1 {
+      width: 100%;
+      text-align: center;
+      color: #c5b358; }
+  main #profile {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    min-height: 60vh; }
+    main #profile h1 {
+      width: 100%;
+      font-size: 2.4em; }
+    main #profile h2 {
+      width: 100%;
+      font-size: 1.5em; }
+    main #profile .userPro {
+      width: 45%;
+      margin: 2em 0; }
+    main #profile .wineAd {
+      display: block;
+      width: 25%;
+      height: 20em;
+      margin: 2em 0; }
+      main #profile .wineAd img {
+        width: 100%;
+        height: 100%; }
+  main #adminPage {
+    min-height: 70vh; }
+    main #adminPage .addItem {
+      margin: 2em auto;
+      width: 50%; }
+      main #adminPage .addItem form fieldset input, main #adminPage .addItem form fieldset select {
+        width: 95%; }
+    main #adminPage .removeUser {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      main #adminPage .removeUser .userInfo {
+        width: 25%; }
+  main section:nth-child(2) {
+    min-height: 40vh; }
+    main section:nth-child(2) #text {
+      min-width: 50%;
+      margin: auto; }
+    main section:nth-child(2) #plate {
+      max-width: 20em;
+      margin: auto;
+      max-height: 20em; }
+      main section:nth-child(2) #plate img {
+        width: 100%; }
+  main section:nth-child(3) {
+    min-height: 50vh; }
+    main section:nth-child(3) h1 {
+      height: 2.2em; }
+    main section:nth-child(3) #weeksp {
+      width: 30%;
+      height: 20em;
+      text-align: center;
+      margin-top: 1em;
+      margin-left: 0.5em;
+      margin-right: 0.5em; }
+      main section:nth-child(3) #weeksp img {
+        width: 100%; }
+  footer {
+    min-height: 30vh; }
+    footer .foot {
+      -webkit-flex: 1 0 30%;
+      -ms-flex: 1 0 30%;
+      flex: 1 0 30%;
+      min-width: 10em;
+      height: 10em;
+      margin-top: 2em; }
+    footer p {
+      width: 100%; } }
+
+@media only screen and (min-width: 62em) {
+  * {
+    outline: 1px solid blue; }
+  .bars {
+    display: none; }
+  header #nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 3em;
+    margin-left: 1em;
+    margin-top: 2em;
+    background-color: transparent;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    header #nav li {
+      height: 1.5em;
+      width: auto;
+      margin-right: 1em;
+      margin-top: 0.5em; }
+      header #nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em; }
+  header .logo {
+    margin-left: 2em; }
+  main section:nth-child(1) #maintext {
+    top: 30%;
+    left: 0;
+    right: 60%;
+    z-index: 10;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    text-align: center; }
+  main #menu {
+    min-height: 70vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    main #menu .resfood {
+      margin: 2em;
+      -webkit-flex: 0 0 43%;
+      -ms-flex: 0 0 43%;
+      flex: 0 0 43%;
+      height: auto; }
+      main #menu .resfood .menuitem h3 {
+        font-size: 1.5em; }
+      main #menu .resfood .menuitem span {
+        font-size: 1.5em; }
+      main #menu .resfood .menuitem p {
+        font-size: 1.3em; }
+    main #menu h1 {
+      margin: 0;
+      padding-top: 0.2em;
+      margin-bottom: 1em;
+      width: 100%;
+      height: 1em;
+      text-align: center;
+      font-size: 2.8em;
+      color: #c5b358; }
+  main #menu_pic {
+    display: block;
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img6.jpg);
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    main #menu_pic h1 {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      font-size: 2.5em;
+      color: white;
+      text-align: center; }
+  main #contact h1 {
+    width: 100%;
+    font-size: 2.5em;
+    height: 2.5em; }
+  main #contact p {
+    width: 40%;
+    font-size: 1.5em;
+    margin-left: 2em; }
+  main #contact form {
+    margin-right: 3em;
+    margin-top: 0;
+    width: 40%; }
+    main #contact form fieldset input, main #contact form fieldset textarea {
+      width: 100%;
+      margin: 0 auto; }
+    main #contact form fieldset textarea {
+      margin-top: 1em; }
+  main #booking p {
+    font-size: 1.4em; }
+  main .formTab {
+    display: block; }
+  main #events p {
+    font-size: 1.5em; }
+  main #reviews {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    main #reviews .heading1 {
+      width: 100%; }
+      main #reviews .heading1 h1 {
+        font-size: 2.5em; }
+      main #reviews .heading1 a {
+        font-size: 2em; }
+    main #reviews .main_review_wrap {
+      width: 70%;
+      margin: 0 auto; }
+    main #reviews .review {
+      width: 90%;
+      margin: 0 auto 3em auto; }
+      main #reviews .review h2 {
+        font-size: 2em; }
+      main #reviews .review p {
+        font-size: 1.5em; }
+  main #logReg {
+    min-height: 50vh; }
+    main #logReg #regoForm, main #logReg #loginForm {
+      width: 40%; }
+    main #logReg h1 {
+      font-size: 2.5em; }
+  main #addReview {
+    min-height: 60vh; }
+    main #addReview h1 {
+      font-size: 2.5em; }
+    main #addReview h2 {
+      font-size: 1.8em; }
+    main #addReview .addForm form fieldset textarea {
+      width: 60%;
+      height: 8em; }
+  main #profile h2 {
+    font-size: 1.6em; }
+  main #profile .userPro h2 {
+    font-size: 1.8em; }
+  main #profile .userPro h5 {
+    font-size: 1.5em; }
+  main #profile .userPro h4 {
+    font-size: 1.3em; }
+  main #profile .wineAd {
+    max-width: 15em;
+    height: 22em; }
+  main #adminPage h2 {
+    font-size: 1.8em; }
+  main #adminPage .removeUser .userInfo h5 {
+    font-size: 1.8em; }
+  main #adminPage .removeUser .userInfo h4 {
+    font-size: 1.6em; }
+  main #adminPage .removeUser .userInfo a {
+    font-size: 1.7em; }
+  main section:nth-child(2) {
+    min-height: 100vh; }
+    main section:nth-child(2) #text {
+      min-width: 50%;
+      margin: auto;
+      font-size: 1.8em; }
+    main section:nth-child(2) #plate {
+      min-width: 30em;
+      margin-top: auto;
+      margin-bottom: auto;
+      min-height: 30em; }
+      main section:nth-child(2) #plate img {
+        width: 100%;
+        height: 100%; }
+    main section:nth-child(2) #chef {
+      max-width: 10em;
+      margin: 0.5em auto 0; }
+      main section:nth-child(2) #chef img {
+        width: 100%;
+        height: 100%; }
+    main section:nth-child(2) .hidechef {
+      display: block; }
+  main section:nth-child(3) {
+    min-height: 80vh; }
+    main section:nth-child(3) h1 {
+      height: 2.2em; }
+    main section:nth-child(3) #weeksp {
+      width: 30%;
+      height: 20em;
+      text-align: center;
+      margin-top: -10em;
+      margin-left: 1em;
+      margin-right: 1em; }
+      main section:nth-child(3) #weeksp p {
+        font-size: 1.5em; }
+  footer .foot {
+    -webkit-flex: 1 0 30%;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    max-width: 30em;
+    height: 10em;
+    margin: 2em 1em 0 1em; }
+  footer p {
+    width: 100%;
+    height: 2em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,11 +1,1629 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-.container{
-	width: 123px;
+*{
+	margin: 0;
+	padding: 0;
+	//outline: 1px solid blue;
 }
 
-.second{
-	background-color: red;
-	font-size: 1px;
-	background-size: cover;
+body{
+	font-family: 'Poiret One', cursive;
+}
+
+.error{
+	color:red; 
+	text-align: center;
+}
+
+.hideIt{
+	display: none;
+}
+
+.hidechef{
+	display: none;
+}
+
+.graf{
+	display: none;
+}
+
+#menu_pic{
+	display: none;
+}
+
+#midlepic, .midletext, .wineAd{
+	display: none;
+}
+
+header{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+	width:100%;
+	height: 6em;
+	// background-color: rgba(255,255,255,0.3);
+	border-bottom: thin solid rgba(0,0,0,0.6);
+	flex: 0 0 content;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+		.bars{
+			flex: 0 0 3em;
+			height: 2.5em;
+			text-align: center;
+			border-radius: 5px;
+			// background-color: rgba(255,255,255,0.);
+			margin-top: 2.5em;
+			margin-right: 0.5em;
+				i{
+				line-height: 1.3em;
+				color: rgb(197,179,88);
+			}
+		}
+
+		#nav{
+			flex:1 1 100%;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			background-color: rgba(0,0,0,0.8);
+			overflow: hidden;
+			transition: all 0.5s ease;
+			list-style-type: none;
+		}
+
+		#nav.show{
+			height: 20em;
+		}
+
+		#nav li{
+			height: 2.5em;
+		}
+
+		#nav li a{
+			display: block;
+			text-align: center;
+			line-height: 2em;
+			font-size: 1.3em;
+			color: rgb(197,179,88);
+			text-decoration: none;
+		}
+
+		.logo{
+			width: 12em;
+			height: 5em;								
+			margin-left: 0.5em;
+			margin-top: 1em;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+		}
+}
+
+main{
+
+	.contbook{
+		max-height: 65vh;
+	}
+
+	section:nth-child(1){
+		#JiSlider{
+			height: 100vh;
+			width: 100%;
+			ul{
+				#slide1{
+					// background-attachment: fixed;
+					background-size: cover;
+					background-image: linear-gradient(
+						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/booking.jpg)!important;
+					background-position: center;
+				}
+				#slide2{
+					// background-attachment: fixed;
+					background-size: cover;
+					background-image: linear-gradient(
+						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/img2.jpg);
+					background-position: center;
+				}
+				#slide3{
+					background-size: cover;
+					background-image: linear-gradient(
+						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/img1.1.jpg);
+					background-position: center;
+				}
+				#slide4{
+					background-size: cover;
+					background-image: linear-gradient(
+						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/gal4.jpg);
+					background-position: center;
+				}
+			}
+		}
+		height: 100vh;
+		background-size: cover;
+		background-image: linear-gradient(
+	      rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/contact.jpg);
+		background-position: center;
+		background-attachment: fixed;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		#maintext{
+			position: absolute;
+			top: 30%;
+			left: 0;
+			z-index: 3;
+			max-width: 100%;
+			font-size: 2.5em;
+			color: white;
+			text-align: center;
+			a{
+				text-decoration: none;
+				font-family: arial;
+				font-size: 0.8em;
+				border: 2px solid white;
+				font-weight: normal;
+				color: white;
+			}
+			span{
+				font-size: 0.5em;
+			}
+		}
+	}
+
+	section:nth-child(2){
+		min-height: 80vh;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		#text{
+			width: 50%;
+			margin-left: auto; 
+			margin-right: auto;
+			margin-top: 1em;
+			text-align: center;
+			font-size: 1.3em;
+				h1{
+					color: rgb(197,179,88);
+				}
+					p{
+						color: rgba(112, 124, 122, 1);
+					}
+		}
+		#plate{
+			min-width: 30%;
+			margin-left: auto; 
+			margin-right: auto;
+			height: 22em;
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	#menu{
+		min-height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-wrap:wrap;
+		a{
+			text-align: center;
+			text-decoration: none;
+			margin-top: 0.5em;
+			min-width: 100% ;
+			color: rgba(112, 124, 122, 1);
+		}
+		a:hover {
+		    color: rgba(0, 0, 255, 1);
+		}
+		.resfood{
+			margin-top: 1em;
+			height: auto;
+			h2{
+					margin: 0;
+					width: 100%;
+					height: 1.5em;
+					text-align: center;
+					border-bottom: thin solid rgba(112, 124, 122, 1);
+					color: rgba(112, 124, 122, 1);
+			}
+				.menuitem{
+					display: flex;
+					flex-wrap:wrap;
+					margin-top: 0.5em;
+					padding: 0;
+					h3{
+						width: 80%;
+						height: 1.2em;
+						color: rgb(197,179,88);
+					}
+					span{
+						height: 1.5em;
+						i{
+							color: rgb(197,179,88);
+						}
+					}
+					p{
+						width: 100%;
+						height: auto;
+						a{
+							color: rgb(240,0,0);
+						}
+					}
+				}
+		}
+		h1{
+			margin: 0;
+			padding-top: 0.5em;
+			width: 100%;
+			height: 1em;
+			text-align: center;
+			font-size: 2.2em;
+			color: rgb(197,179,88);
+		}
+	}
+
+	#contact{
+		min-height: 60vh;
+		h1{
+			text-align: center;
+			font-size: 2.2em;
+			color: rgb(197,179,88);
+		}
+		p{
+			font-size: 1.3em;
+			margin-left: 1em;
+			color: rgba(112, 124, 122, 1);
+		}
+		form{
+			display: flex;
+			justify-content: center;
+			flex-wrap:wrap;
+			margin: 1em auto;
+			fieldset{
+				width: 100%;
+				display: flex;
+				justify-content:center;
+				input, textarea{
+					width: 90%;
+					margin: 0 auto;
+				}
+				textarea{
+					margin-top: 1em;
+				}
+			}
+			button{
+				background-color: rgb(197,179,88);
+			}
+		}
+		.error{
+			color:red; 
+			width: 15em;
+		}
+	}
+
+	#map{
+		height: 40vh;
+		background-color: rgba(112, 124, 122, 1);
+	}
+
+	#booking{
+		min-height: 70vh;
+		h1{
+			text-align: center;
+			font-size: 2.2em;
+			color: rgb(197,179,88);
+		}
+		p{
+			text-align: center;
+			font-size: 1.3em;		
+			color: rgba(112, 124, 122, 1);
+		}
+		form{
+			display: flex;
+			justify-content: center;
+			flex-wrap:wrap;
+			margin-top: 1em;
+			fieldset{
+				width: 100%;
+				display: flex;
+				justify-content:center;
+				input{
+					width: 90%;
+					margin: 1em auto 0;
+				}
+				
+			}
+			button{
+				background-color: rgb(197,179,88);
+			}
+		}
+		#gallery{
+			margin: 2em auto;
+			height: auto;
+		}
+		.error{
+			color:red; 
+		}
+	}
+
+	#events{
+			min-height: 70vh;
+			text-align: center;
+			margin-top: 2em;
+			h2{
+				width: 100%;
+				margin-bottom: 1em;
+				color: rgb(197,179,88);
+				font-size: 1.8em;
+			}
+			p{
+				width: 100%;
+				height: 100%;
+				margin: auto 0;
+				font-size: 1.2em;
+			}
+			#private, #wedding{
+				margin-bottom: 2em;
+				.textprivate{
+					width: 80%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: 0 auto;
+					.evenpic{
+						width: 100%;
+						height: 100%;
+						margin: auto 0;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+			
+		}
+
+		.pagination{
+			display: flex;
+			flex-wrap: no-wrap;
+			font-size: 1.5em;
+			width: 5em;
+			margin: 0 auto;
+				li, a{
+					margin: 0 auto;
+					text-decoration: none;
+					list-style-type: none; 
+				}
+		}
+
+		#reviews{
+			min-height: 100vh;
+			.heading1{
+				display: flex;
+				flex-wrap:wrap;
+				margin-bottom: 2em;
+				h1{
+					width: 100%;
+					margin: 1em 0 0 0;
+					text-align: center;
+					color: rgb(197,179,88);
+				}
+				a{
+					text-decoration: none;
+					text-align: center;
+					font-size: 1.4em;
+					margin: 0;
+					width: 100%;
+					color: rgba(112, 124, 122, 1);
+				}
+				a:hover {
+				    color: rgba(0, 0, 255, 1);
+				}
+			}
+			
+			.review{
+				display: flex;
+				flex-wrap:wrap;
+				margin-bottom: 2em;
+				border-bottom: thin solid rgba(112, 124, 122, 1);
+				border-top: thin solid rgba(112, 124, 122, 1);
+				h2{
+					width: 100%;
+					color: rgb(197,179,88);
+					span{
+						color: rgba(0, 0, 200, 0.7);
+						font-size: 1em;
+					}
+				}
+				p{
+					font-size: 1.2em;
+				}
+				a{
+					text-decoration: none;
+					font-size: 1.3em;
+					border: thin solid rgba(112, 124, 122, 1); 
+					color: rgb(240,0,0);
+				}
+			}
+		}
+
+		#logReg{
+			min-height: 50vh;
+			#regoForm, #loginForm{
+				margin-bottom: 2em;
+				form{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content:center;
+					fieldset{
+						width: 100%;
+						legend{
+							text-align: center;
+							font-size: 1.2em;
+						}
+						input{
+							width: 90%;
+							margin: 0.3em auto 0 auto;
+						}
+					}
+					button{
+						margin: 0 auto;
+						background-color: rgb(197,179,88);
+					}	
+				}
+			}
+			h1{
+				text-align: center;
+				color: rgb(197,179,88);
+			}
+			.error{
+				color:red; 
+				font-size: 1.3em;
+			}
+		}
+
+		#addReview{
+			min-height: 40vh;
+			h1{
+				text-align: center;
+				color: rgb(197,179,88);
+			}
+			h2{
+				margin-bottom: 0.5em;
+				font-size: 1.3em;
+				text-align: center;
+				color: rgba(112, 124, 122, 1);
+			}
+			.addForm{
+				form{
+					display: flex;
+					flex-wrap:wrap;
+					width: 100%;
+					fieldset{
+						width: 100%;
+						textarea{
+							width: 90%;
+							height: 6em;
+							margin: 0 auto;
+						}
+					}
+					button{
+						width: 8em;
+						margin: 0 auto;
+						background-color: rgb(197,179,88);
+					}
+				}
+			}
+			.error{
+				color:red; 
+				font-size: 1.3em;
+			}
+		}
+
+		#profile{
+			min-height: 50vh;
+			text-align: center;
+			h1{
+				text-align: center;
+				color: rgb(197,179,88);
+			}
+			h2{
+				margin-bottom: 0.5em;
+				font-size: 1.3em;
+				text-align: center;
+				color: rgba(112, 124, 122, 1);
+			}
+			.userPro{
+				margin-top: 2em;
+				h2{
+					color: rgb(197,179,88);
+				}
+				h5{
+					font-size: 1.3em;
+					color: rgba(0, 0, 200, 0.7);
+				}
+				h4{
+					font-size: 1.2em;
+					margin-bottom: 1em;
+					color: rgba(112, 124, 122, 1);
+				}
+			}
+
+		}
+
+		#adminPage{
+			min-height: 70vh;
+			h1{
+				text-align: center;
+				color: rgb(197,179,88);
+			}
+			h2{
+				margin-bottom: 0.5em;
+				font-size: 1.3em;
+				text-align: center;
+				color: rgba(112, 124, 122, 1);
+			}
+			.addItem{
+				margin: 2em 0;
+				form{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content:center;
+					fieldset{
+						width: 100%;
+						input, select{
+							width: 95%;
+							margin: 0.5em auto;
+						}
+					}
+				}
+				.error{
+					color:red; 
+					font-size: 1.3em;
+				}
+			}
+			.removeUser{
+				.userInfo{
+					border: thin solid grey;
+					text-align: center;
+					margin: 2em auto;
+					width: 80%;
+					h5{
+						color: rgb(197,179,88);
+						font-size: 1.3em;
+					}
+					a{
+						font-size: 1.3em;
+						text-decoration: none;
+						color: rgb(240,0,0);
+					}
+				}
+			}
+		}
+
+	section:nth-child(3){
+		min-height: 80vh;
+		background-attachment: fixed;
+		background-image: url(../img/img3.2.png);
+		background-position: center;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+			h1{
+				width: 100%;
+				height: 2.5em;
+				margin: 1em 0 0 0;
+				text-align: center;
+				font-size: 2.5em;
+				color: rgb(197,179,88);
+			}
+			#weeksp{
+				width: 100%;
+				height: 25em;
+				text-align: center;
+				margin-top: 1em;
+				img{
+					width: 100%;
+				}
+			}
+			h2{
+					color: rgb(197,179,88);
+					font-size: 1.8em;
+				}
+					p{
+						// color: rgba(112, 124, 122, 1);
+						font-size: 1.2em;
+					}
+	}
+}
+
+footer{
+	min-height: 40vh;
+	display: flex;
+	flex-wrap:wrap;
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	.foot{
+		flex:1 0 100%; 
+		min-width: 10em;
+		height: 10em;
+		margin-top: 1em;
+	}
+	p{
+		width: 100%;
+	}
+	a{
+		text-decoration: none;
+		color: rgb(197,179,88);
+	}
+	
+}
+
+
+
+@media only screen and (min-width : 24em) {
+	*{
+		outline: 1px solid red;
+	}
+
+	.graf{
+		display: block;
+		margin: auto;
+	}
+
+	header{
+		.bars{
+			margin-right: 2.5em;
+		}
+
+		.logo{								
+			margin-left: 2.5em;
+			margin-top: 1em;
+		}
+	}
+
+	main{
+
+		section:nth-child(1){
+			#maintext{
+				top: 35%;
+				left: 0;
+				right: 60%;
+				z-index: 10;
+				width: 100%;
+				font-size: 2.6em;
+				color: white;
+				text-align: center;
+				a{
+					font-size: 0.6em;
+				}
+			}
+		}
+
+		#menu{
+			a{
+				margin-top: 2em;
+				font-size: 1.5em;
+			}
+			.resfood{
+				margin-top: 3em;
+				height: auto;
+				h2{
+					font-size: 1.8em;
+				}
+					.menuitem{
+						height: auto;
+						h3{
+							width: 80%;
+							margin-left: 0.5em;
+							font-size: 1.3em;
+						}
+						span{
+							font-size: 1.2em;
+						}
+						p{
+							margin-left: 0.5em;
+							margin-top: 0.5em;
+							font-size: 1.2em;
+							a{
+								font-size: 1em;
+							}
+						}
+					}
+			}
+			h1{
+				margin: 0;
+				padding-top: 0.5em;
+				width: 100%;
+				height: 1em;
+				text-align: center;
+				font-size: 2.2em;
+				color: rgb(197,179,88);
+			}
+		}
+
+		#contact{
+			min-height: 60vh;
+			form{
+				fieldset{
+					input, textarea{
+						width: 80%;
+						margin: 0 auto;
+					}
+					textarea{
+						margin-top: 1em;
+					}
+				}
+			}
+		}
+
+		#booking{
+			display: flex;
+			flex-wrap: wrap;
+			h1{
+				min-width: 100%;
+			}
+			form{
+				min-width: 100%;
+				fieldset{
+					input{
+						width: 80%;
+						margin: 1em auto 0;
+					}
+					
+				}
+				button{
+					max-height: 2em;
+					width: 14em;
+				}
+			}
+			#gallery{
+				margin: 2em auto;
+				width: 80%;
+				height: auto;
+			}
+		}
+
+		#events{
+			#private, #wedding{
+				.textprivate{
+					.evenpic{
+						width: 100%;
+						height: 100%;
+						margin: auto 0;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+			
+		}
+
+		.pagination{
+			width: 7em;
+		}
+
+		#reviews{
+			.heading1{
+				h1{
+					font-size: 2.2em;
+				}
+				a{
+					font-size: 1.6em;
+				}
+			}
+			
+			.review{
+				h2{
+					font-size: 1.8em;
+					span{
+						font-size: 0.8em;
+					}
+				}
+				p{
+					font-size: 1.3em;
+				}
+				a{
+					color: rgba(230,0,0, 0.7);
+				}
+			}
+			.socialM{
+				width: 80%;
+				height: 30em;
+				margin: 0 auto 1em auto;
+				outline: 2px solid black;
+			}
+		}
+
+		#logReg{
+			#regoForm, #loginForm{
+				form{
+					fieldset{
+						legend{
+							font-size: 1.3em;
+						}
+						input{
+							width: 60%;
+						}
+					}
+				}
+			}
+			h1{
+				font-size: 2.5em;
+			}
+		}	
+
+		#addReview{
+			min-height: 60vh;
+			h1{
+				font-size: 2.3em;
+			}
+			h2{
+				margin-bottom: 0.5em;
+				font-size: 1.5em;
+			}
+			.addForm{
+				form{
+					fieldset{
+						textarea{
+							width: 80%;
+							height: 7em;
+						}
+					}
+				}
+			}
+		}	
+
+		#adminPage{
+			min-height: 70vh;
+			h1{
+				font-size: 2.4em;
+			}
+			h2{
+				font-size: 1.6em;
+			}
+			.addItem{
+				margin: 2em 0;
+				form{
+					fieldset{
+						input, select{
+							width: 60%;
+						}
+					}
+				}
+			}
+			.removeUser{
+				.userInfo{
+					width: 60%;
+					h5{
+						font-size: 1.5em;
+					}
+					h4{
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+
+		section:nth-child(2){
+			#text{
+				min-width: 80%;
+				margin-bottom: 1em;
+			}
+			#plate{
+				max-width: 20em;
+				margin-left: auto; 
+				margin-right: auto;
+				max-height: 20em;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		section:nth-child(3){
+			h1{
+				height: 3.5em;
+			}
+				#weeksp{
+					width: 30em;
+					max-height: 50em;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+					img{
+						width: 80%;
+					}
+				}
+					h2{
+						font-size: 2em;
+					}
+		}
+	}
+
+	footer{
+		.foot{
+			flex:1 0 50%; 
+			min-width: 10em;
+			height: 10em;
+			margin-top: 1em;
+		}
+		p{
+			width: 100%;
+		}
+		
+	}
+}
+
+@media only screen and (max-width: 48em){
+	
+	.animated{
+		animation-name:none !important;
+	}
+
+}
+
+@media only screen and (min-width : 48em) {
+	*{
+		outline: 1px solid green;
+	}
+	.hideIt{
+		display: block;
+	}
+
+	header{
+		.bars{
+			margin-right: 7em;
+		}
+
+		.logo{								
+			margin-left: 7em;
+			margin-top: 1em;
+		}
+	}
+
+	main{
+		section:nth-child(1){
+			#maintext{
+				top: 30%;
+				left: 0;
+				right: 60%;
+				z-index: 10;
+				width: 100%;
+				font-size: 3em;
+				color: white;
+				text-align: center;
+			}
+		}
+
+		#menu{
+			min-height: 100vh;
+			justify-content: space-around;
+			.resfood{
+				margin-bottom: 2em; 
+				flex:0 0 45%;
+				height: auto;
+				h2{
+					font-size: 2em;
+				}
+					.menuitem{
+						height: auto;
+						h3{
+							width: 75%;
+							margin-left: 0em;
+							font-size: 1.5em;
+						}
+						span{
+							font-size: 1.5em;
+						}
+						p{
+							margin-left: 0em;
+							font-size: 1.5em;
+						}
+					}
+			}
+			h1{
+				font-size: 2.8em;
+			}
+		}
+
+		#contact{
+			min-height: 50vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 2em;
+			h1{
+				width: 100%;
+				font-size: 2.5em;
+			}
+			p{
+				width: 50%;
+				font-size: 1.5em;
+				margin-left: 1em;
+			}
+			form{
+				margin-right: 1em;
+				margin-top: 0;
+				width: 40%;
+				fieldset{
+					margin: auto 0;
+					input, textarea{
+						width: 100%;
+						margin: 0 auto;
+					}
+					textarea{
+						margin-top: 1em;
+					}
+				}
+				button{
+					max-height: 2em;
+					width: 10em;
+				}
+			}
+		}
+
+		#booking{
+			min-height: 60vh;
+			display: flex;
+			flex-wrap: wrap;
+			h1{
+				min-width: 100%;
+			}
+			p{
+				margin: 0 auto;
+				width: 90%;
+			}
+			form{
+				min-width: 50%;
+				margin-bottom: 2em;
+				fieldset{
+					margin: auto 0;
+					input{
+						width: 80%;
+						margin: 1em auto 0;
+					}
+				}
+				button{
+					max-height: 2em;
+					width: 10em;
+				}
+			}
+			#gallery{
+				margin: 2em auto;
+				width: 40%;
+				height: auto;
+			}
+			.error{
+				color:red;
+			}
+		}
+
+		#midelepic{
+			display: block;
+			min-height: 20vh;
+			max-width: 100%;
+			background-attachment: fixed;
+			background-image: url(../img/img3.2.png);
+			background-position: center;
+			.midletext{
+				display: block;
+				text-align: center;
+				width: 100%;
+				color: rgba(112, 124, 122, 1);
+			}
+		}
+
+		#events{
+			min-height: 70vh;
+			text-align: center;
+			margin-top: 2em;
+			h2{
+				width: 100%;
+				margin-bottom: 1em;
+				color: rgb(197,179,88);
+				font-size: 1.8em;
+			}
+			p{
+				width: 40%;
+				height: 100%;
+				margin: auto 0;
+				font-size: 1.2em;
+			}
+			#private, #wedding{
+				margin-bottom: 4em;
+				.textprivate{
+					width: 80%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: 0 auto;
+					.evenpic{
+						width: 50%;
+						height: 100%;
+						margin: auto 0;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+			
+		}
+
+		#reviews{
+			.review{
+				width: 90%;
+				margin: 0 auto 2em auto;
+				h2{
+					font-size: 2em;
+				}
+				p{
+					font-size: 1.5em;
+				}
+			}
+			.socialM{
+				width: 60%;
+			}
+		}
+
+		#logReg{
+			min-height: 50vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			#regoForm, #loginForm{
+				width: 45%;
+				form{
+					fieldset{
+						width: 100%;
+						legend{
+							font-size: 1.5em;
+						}
+						input{
+							width: 90%;
+							margin: 0.3em auto 0 auto;
+						}
+					}
+					button{
+						margin: 0 auto;
+					}	
+				}
+			}
+			h1{
+				width: 100%;
+				text-align: center;
+				color: rgb(197,179,88);
+			}
+		}
+
+		#profile{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			min-height: 60vh;
+			h1{
+				width: 100%;
+				font-size: 2.4em;
+			}
+			h2{
+				width: 100%;
+				font-size: 1.5em;
+			}
+			.userPro{
+				width: 45%;
+				margin: 2em 0;
+			}
+			.wineAd{
+				display: block;
+				width: 25%;
+				height: 20em;
+				margin: 2em 0;
+				 img{
+				 	width: 100%;
+				 	height: 100%;
+				 }
+			}
+		}
+
+		#adminPage{
+			min-height: 70vh;
+			.addItem{
+				margin: 2em auto;
+				width: 50%;
+				form{
+					fieldset{
+						input, select{
+							width: 95%;
+						}
+					}
+				}
+			}
+			.removeUser{
+				display: flex;
+				flex-wrap:wrap;
+				.userInfo{
+					width: 25%;
+				}
+			}
+		}
+
+		section:nth-child(2){
+			min-height: 40vh;
+			#text{
+				min-width: 50%;
+				margin: auto;
+			}
+			#plate{
+				max-width: 20em;
+				margin: auto;
+				max-height: 20em;
+				img{
+					width: 100%;
+				}
+			}
+		}
+
+		section:nth-child(3){
+			min-height: 50vh;
+			h1{
+				height: 2.2em;
+			}
+				#weeksp{
+					width: 30%;
+					height: 20em;
+					text-align: center;
+					margin-top: 1em;
+					margin-left: 0.5em;
+					margin-right: 0.5em;
+					img{
+						width: 100%;
+					}
+				}
+		}
+	}
+
+	footer{
+		min-height: 30vh;
+		.foot{
+			flex:1 0 30%; 
+			min-width: 10em;
+			height: 10em;
+			margin-top: 2em;
+		}
+		p{
+			width: 100%;
+		}
+		
+	}
+	
+}
+
+@media only screen and (min-width : 62em) {
+	*{
+		outline: 1px solid blue;
+	}
+	.bars{
+		display: none;
+	}
+
+
+
+	header{
+		#nav{
+			display: flex;
+			min-height: 3em;
+			margin-left: 1em;
+			margin-top: 2em;
+			background-color: rgba(0,0,0,0);
+			flex:0 0 75%;
+			justify-content: flex-end;
+			
+			li{
+				height: 1.5em;
+				width: auto;
+				margin-right: 1em;
+				margin-top: 0.5em;
+				a{
+					color: white;
+					text-decoration: none;
+					font-size: 1.3em;
+				}
+			}
+			
+		}
+		.logo{
+			margin-left: 2em;
+		}
+	}
+
+	main{
+		section:nth-child(1){
+			#maintext{
+				top: 30%;
+				left: 0;
+				right: 60%;
+				z-index: 10;
+				width: 100%;
+				font-size: 3em;
+				color: white;
+				text-align: center;
+			}
+		}
+
+		#menu{
+			min-height: 70vh;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-between;
+			.resfood{
+				margin: 2em;
+				flex:0 0 43%;
+				height: auto;
+				.menuitem{
+					h3{
+						font-size: 1.5em;
+					}
+					span{
+						font-size: 1.5em;
+					}
+					p{
+						font-size: 1.3em;
+					}
+				}
+			}
+			h1{
+				margin: 0;
+				padding-top: 0.2em;
+				margin-bottom: 1em;
+				width: 100%;
+				height: 1em;
+				text-align: center;
+				font-size: 2.8em;
+				color: rgb(197,179,88);
+			}
+		}
+
+		#menu_pic{
+			display: block;
+			min-height: 40vh;
+			background-attachment: fixed;
+			background-image: linear-gradient(
+				rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/img6.jpg);
+			background-position: center;
+			position: relative;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			h1{
+				position: absolute;
+				top: 35%;
+				left: 0;
+				z-index: 10;
+				width: 100%;
+				font-size: 2.5em;
+				color: white;
+				text-align: center;
+			}
+		}
+
+		#contact{
+			h1{
+				width: 100%;
+				font-size: 2.5em;
+				height: 2.5em;
+			}
+			p{
+				width: 40%;
+				font-size: 1.5em;
+				margin-left: 2em;
+			}
+			form{
+				margin-right: 3em;
+				margin-top: 0;
+				width: 40%;
+				fieldset{
+					input, textarea{
+						width: 100%;
+						margin: 0 auto;
+					}
+					textarea{
+						margin-top: 1em;
+					}
+				}
+			}
+		}
+
+		#booking{
+			p{
+				font-size: 1.4em;
+			}
+		}
+
+		.formTab{
+			display: block;
+		}
+
+		#events{
+			p{
+				font-size: 1.5em;
+			}
+		}
+
+		#reviews{
+			display: flex;
+			flex-wrap: wrap;
+			.heading1{
+				width: 100%;
+				h1{
+					font-size: 2.5em;
+				}
+				a{
+					font-size: 2em;
+				}
+			}
+			.main_review_wrap{
+				width: 70%;
+				margin: 0 auto;
+			}
+			.review{
+				width: 90%;
+				margin: 0 auto 3em auto;
+				h2{
+					font-size: 2em;
+				}
+				p{
+					font-size: 1.5em;
+				}
+			}
+		}
+
+		#logReg{
+			min-height: 50vh;
+			#regoForm, #loginForm{
+				width: 40%;
+			}
+			h1{
+				font-size: 2.5em;
+			}
+		}
+
+		#addReview{
+			min-height: 60vh;
+			h1{
+				font-size: 2.5em;
+			}
+			h2{
+				font-size: 1.8em;
+			}
+			.addForm{
+				form{
+					fieldset{
+						textarea{
+							width: 60%;
+							height: 8em;
+						}
+					}
+				}
+			}
+		}	
+
+		#profile{
+			h2{
+				font-size: 1.6em;
+			}
+			.userPro{
+				h2{
+					font-size: 1.8em;
+				}
+				h5{
+					font-size: 1.5em;
+				}
+				h4{
+					font-size: 1.3em;
+				}
+			}
+			.wineAd{
+				max-width: 15em;
+				height: 22em;
+			}
+		}
+
+		#adminPage{
+			h2{
+				font-size: 1.8em;
+			}
+			.removeUser{
+				.userInfo{
+					h5{
+						font-size: 1.8em;
+					}
+					h4{
+						font-size: 1.6em;
+					}
+					a{
+						font-size: 1.7em;
+					}
+				}
+			}
+		}
+
+		section:nth-child(2){
+			min-height: 100vh;
+			#text{
+				min-width: 50%;
+				margin: auto;
+				font-size: 1.8em;
+			}
+			#plate{
+				min-width: 30em;
+				margin-top: auto;
+				margin-bottom: auto;
+				min-height: 30em;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			#chef{
+				max-width: 10em;
+				margin: 0.5em auto 0;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.hidechef{
+				display: block;
+			}
+		}
+
+		section:nth-child(3){
+			min-height: 80vh;
+			h1{
+				height: 2.2em;
+			}
+				#weeksp{
+					width: 30%;
+					height: 20em;
+					text-align: center;
+					margin-top: -10em;
+					margin-left: 1em;
+					margin-right: 1em;
+					p{
+						font-size: 1.5em;
+					}
+				}
+		}
+	}
+
+	footer{
+		.foot{
+			flex:1 0 30%; 
+			max-width: 30em;
+			height: 10em;
+			margin: 2em 1em 0 1em;  
+		}
+		p{
+			width: 100%;
+			height: 2em;
+		}
+		
+	}
 }

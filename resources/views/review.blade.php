@@ -46,7 +46,5 @@
                         {!! $reviews->render();!!}
                         
                     </div>
-
-                    <div class="socialM"></div>
             </div>
 @stop

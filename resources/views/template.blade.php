@@ -6,7 +6,7 @@
     	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     	<!-- <link rel="stylesheet" href="css/animate.css"> -->
-    	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    	<link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{asset('css/JiSlider.css')}}">
         <link href="{{asset('css/light-carousel.css')}}" rel="stylesheet" type='text/css'>
@@ -73,7 +73,9 @@
             <p>Copyright © 2015 Bella Milano. Design by <a href="">Kiril Zhelyazkov</a></p>
         </footer>
      
-    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI70QvYZy_lrSASsqVsgn8teLLmmBcy6M&callback=initMap"
+       async defer></script>
+
     <script src="{{asset('js/geo-min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
@@ -84,9 +86,6 @@
     <script src="{{asset('js/history/html5/jquery.history.js')}}"></script>
     <script src="{{asset('js/jquery.jeditable.js')}}"></script>
     <script src="{{asset('js/script.js')}}"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI70QvYZy_lrSASsqVsgn8teLLmmBcy6M&callback=initMap"
-       async defer></script>
 
     </body>
     </html>

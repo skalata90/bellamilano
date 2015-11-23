@@ -32,7 +32,7 @@ Route::post('booking', function(\App\Http\Requests\BookingFormRequest $request){
 		$message->to('skalata90@gmail.com')->from($data['email'])->subject('Bella Milano Booking Request');
 	});
 
-	return redirect('booking')->with("message_success","Thanks! We get back to you shortly");
+	return redirect('booking')->with("message_success","Thanks! We will get back to you shortly");
 });
 
 Route::get('index', "PagesController@showHome");

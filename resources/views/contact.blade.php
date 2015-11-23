@@ -7,7 +7,7 @@
             </section>
 
             <div id="contact">
-                <h1>Our location<img src="img/span.fw.png" class="graf"></h1>
+                <h1>Our location<img src="{{asset('img/span.fw.png')}}" class="graf"></h1>
                     <p>Located in the heart of Auckland, close to many shops. Bella Milano gives you that Italian breeze to fresh you up.<br>If you have questions or comments, please get a hold of us in a way most convenient to you.<br><br><br>Address: 12 Shortland St Auckland<br>Ph: 09 633 4573<br>Opening hours: Mon to Thur 11am-Late <br> Fri to Sun 9am-Late</p>
                         
 
