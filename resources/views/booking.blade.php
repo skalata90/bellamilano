@@ -8,7 +8,7 @@
             </section>
 
             <div id="booking">
-                <h1>Make a booking<img src="img/span.fw.png" class="graf"></h1>
+                <h1>Make a booking<img src="{{asset('img/span.fw.png')}}" class="graf"></h1>
                     <p>We take reservations for lunch and dinner. To make a reservation, please call us at 09 633 4573 between 12am-6pm, Monday to Sunday.</p>
 
                         {!! Form::open(array('url' => 'booking','class'=>'pure-form')) !!}
@@ -37,14 +37,14 @@
                             <div id="gallery">
                                 <div class="carousel">
                                   <ul>
-                                    <li> <img src="img/gal1.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal2.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal3.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal4.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal5.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal6.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal7.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal8.1.jpg" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal1.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal2.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal3.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal4.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal5.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal6.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal7.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal8.1.jpg')}}" alt=""> </li>
                                   </ul>
                                   <div class="controls">
                                     <div class="prev"></div>
@@ -54,14 +54,14 @@
 
                                 <div class="thumbnails">
                                   <ul>
-                                    <li> <img src="img/gal1.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal2.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal3.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal4.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal5.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal6.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal7.1.jpg" alt=""> </li>
-                                    <li> <img src="img/gal8.1.jpg" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal1.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal2.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal3.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal4.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal5.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal6.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal7.1.jpg')}}" alt=""> </li>
+                                    <li> <img src="{{asset('img/gal8.1.jpg')}}" alt=""> </li>
                                   </ul>
                                 </div>
                             </div>
@@ -79,13 +79,13 @@
                     <div class="textprivate">
                         <h2>Private Dining & Events</h2>
                         <p>Whatever your event or celebration, we are here to make your special day a truly memorable one. Bella Milano private dining experts are more than happy to create custom floral arrangements and arrange for guests to meet our chef during the course of their meal.</p>
-                            <div class="evenpic"><img src="img/private1.jpg" alt=""></div>
+                            <div class="evenpic"><img src="{{asset('img/private1.jpg')}}" alt=""></div>
                     </div>
                 </div>
                     <div id="wedding">
                         <div class="textprivate">
                             <h2>Wedding & Birthdays</h2>
-                                <div class="evenpic"><img src="img/party.jpg" alt=""></div>
+                                <div class="evenpic"><img src="{{asset('img/party.jpg')}}" alt=""></div>
                                 <p>We can offer you exclusive use of our prviate garden area for both your wedding ceremony, casual drinks and formal or casual reception.Various marguee options are avaiable and we have chairs and tables that can be set-up to suit your needs.
                                 We can help make your wedding day special.</p>
                         </div>

@@ -12,7 +12,6 @@
                         <div class="addItem">
                             {!! Form::open(array('url' => 'menus','class'=>'pure-form pure-form-stacked')) !!}
                                 <fieldset>
-                                    <!-- <legend>A Stacked Form</legend> -->
 
                                     {!! Form::text('name','', array('placeholder' => 'Meal Name')) !!}
                                     {!! $errors->first('name','<p class="error">:message</p>') !!}
@@ -51,8 +50,6 @@
                                         {!! Form::open(["url"=>"users/".$user->id, "method"=>"delete"]) !!} 
                                         {!! Form::submit("Delete", array('class'=>'pure-button pure-button-primary')) !!}
                                         {!! Form::close() !!}
-
-                                    {{-- <a href="">Delete user</a> --}}
 
                                     </div>
                                 @endforeach

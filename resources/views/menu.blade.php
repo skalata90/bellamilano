@@ -20,7 +20,7 @@
             </section>
 
             <div id="menu">
-                <h1>Check our menu <br> <img src="img/span.fw.png" class="graf"></h1>
+                <h1>Check our menu <br> <img src="{{asset('img/span.fw.png')}}" class="graf"></h1>
                 @if(Auth::check())    
                     @if(Auth::user()->admin == 1)
                         <a href="{{url('admin')}}">Click here to add new item to the menu</a> 

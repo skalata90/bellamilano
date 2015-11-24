@@ -3,7 +3,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	//outline: 1px solid blue;
 }
 
 body{
@@ -42,7 +41,6 @@ header{
 	z-index: 10;
 	width:100%;
 	height: 6em;
-	// background-color: rgba(255,255,255,0.3);
 	border-bottom: thin solid rgba(0,0,0,0.6);
 	flex: 0 0 content;
 	display: flex;
@@ -53,7 +51,6 @@ header{
 			height: 2.5em;
 			text-align: center;
 			border-radius: 5px;
-			// background-color: rgba(255,255,255,0.);
 			margin-top: 2.5em;
 			margin-right: 0.5em;
 				i{
@@ -114,14 +111,12 @@ main{
 			width: 100%;
 			ul{
 				#slide1{
-					// background-attachment: fixed;
 					background-size: cover;
 					background-image: linear-gradient(
 						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/booking.jpg)!important;
 					background-position: center;
 				}
 				#slide2{
-					// background-attachment: fixed;
 					background-size: cover;
 					background-image: linear-gradient(
 						rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/img2.jpg);
@@ -638,7 +633,6 @@ main{
 					font-size: 1.8em;
 				}
 					p{
-						// color: rgba(112, 124, 122, 1);
 						font-size: 1.2em;
 					}
 	}
@@ -671,12 +665,7 @@ footer{
 	
 }
 
-
-
 @media only screen and (min-width : 24em) {
-	*{
-		outline: 1px solid red;
-	}
 
 	.graf{
 		display: block;
@@ -809,8 +798,7 @@ footer{
 						}
 					}
 				}
-			}
-			
+			}		
 		}
 
 		.pagination{
@@ -868,7 +856,7 @@ footer{
 		}	
 
 		#addReview{
-			min-height: 60vh;
+			min-height: 50vh;
 			h1{
 				font-size: 2.3em;
 			}
@@ -979,9 +967,7 @@ footer{
 }
 
 @media only screen and (min-width : 48em) {
-	*{
-		outline: 1px solid green;
-	}
+
 	.hideIt{
 		display: block;
 	}
@@ -1082,6 +1068,7 @@ footer{
 			min-height: 60vh;
 			display: flex;
 			flex-wrap: wrap;
+			margin-bottom: 3em;
 			h1{
 				min-width: 100%;
 			}
@@ -1146,7 +1133,7 @@ footer{
 				font-size: 1.2em;
 			}
 			#private, #wedding{
-				margin-bottom: 4em;
+				margin-bottom: 5em;
 				.textprivate{
 					width: 80%;
 					display: flex;
@@ -1316,14 +1303,10 @@ footer{
 }
 
 @media only screen and (min-width : 62em) {
-	*{
-		outline: 1px solid blue;
-	}
+
 	.bars{
 		display: none;
 	}
-
-
 
 	header{
 		#nav{
@@ -1505,7 +1488,7 @@ footer{
 		}
 
 		#addReview{
-			min-height: 60vh;
+			min-height: 45vh;
 			h1{
 				font-size: 2.5em;
 			}
@@ -1565,7 +1548,7 @@ footer{
 		}
 
 		section:nth-child(2){
-			min-height: 100vh;
+			min-height: 80vh;
 			#text{
 				min-width: 50%;
 				margin: auto;
@@ -1623,7 +1606,6 @@ footer{
 		p{
 			width: 100%;
 			height: 2em;
-		}
-		
+		}	
 	}
 }

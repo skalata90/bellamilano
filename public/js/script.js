@@ -50,10 +50,7 @@ $('#gallery').lightCarousel();
 			submit: "Edit"
 		};
 
-		//console.log(options);
 		$(el).editable(url,options);
-
-		//console.log(el);
 
 	});
 
@@ -71,18 +68,12 @@ $('#gallery').lightCarousel();
 			submit: "Edit"
 		};
 
-		//console.log(options);
 		$(el).editable(url,options);
-
-		//console.log(el);
 
 	});     
 
 //========================== MAPS =============================
 
-
-
-	
 	var style = 
 					[
 					    {
@@ -178,8 +169,7 @@ $('#gallery').lightCarousel();
 					]
 
 
-	var ferry = {lat: -36.898712, lng: 174.907290};
-	// var home = {lat: -36.903911 , lng: 174.914957};
+	var ferry = {lat: -36.846335, lng: 174.766639};
 
   	// Create a map object and specify the DOM element for display.
   	var map = new google.maps.Map(document.getElementById('map'), {
@@ -206,7 +196,6 @@ $('#gallery').lightCarousel();
 
        geo_position_js.getCurrentPosition(
         function(position){
-            console.log(position);
 
             var home = {lat: position.coords.latitude, lng: position.coords.longitude};
             var directionsDisplay = new google.maps.DirectionsRenderer({
@@ -228,10 +217,6 @@ $('#gallery').lightCarousel();
                 }
             });
 
-            // var infowindow1 = new google.maps.InfoWindow({
-            //     content: '<div id="content">You are here</div>'
-            // });
-
             var marker2 = new google.maps.Marker({
                 position: home,
             });
@@ -252,7 +237,5 @@ $('#gallery').lightCarousel();
     else{
        console.log("Functionality not available");
     }
-
-
 
 });

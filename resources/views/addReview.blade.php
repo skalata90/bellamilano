@@ -3,7 +3,7 @@
 
 @section('content')
             <section class="contbook">
-                  <h1 id="maintext">Tell us what is our service</h1>
+                  <h1 id="maintext">Tell us what our service is</h1>
             </section>
 
             <div id="addReview">
@@ -12,7 +12,6 @@
                         <div class="addForm">
                             {!! Form::open(array('url' => 'reviews','class'=>'pure-form')) !!}
                                 <fieldset class="pure-group">
-                                    {{-- <legend>Fill up the form to register</legend> --}}
 
                                     {!! Form::textarea('content','', array('placeholder' => 'Your Review')) !!}
                                     {!! $errors->first('content','<p class="error">:message</p>') !!}

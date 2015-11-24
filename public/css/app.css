@@ -606,8 +606,6 @@ footer {
     color: #c5b358; }
 
 @media only screen and (min-width: 24em) {
-  * {
-    outline: 1px solid red; }
   .graf {
     display: block;
     margin: auto; }
@@ -718,7 +716,7 @@ footer {
   main #logReg h1 {
     font-size: 2.5em; }
   main #addReview {
-    min-height: 60vh; }
+    min-height: 50vh; }
     main #addReview h1 {
       font-size: 2.3em; }
     main #addReview h2 {
@@ -782,8 +780,6 @@ footer {
     animation-name: none !important; } }
 
 @media only screen and (min-width: 48em) {
-  * {
-    outline: 1px solid green; }
   .hideIt {
     display: block; }
   header .bars {
@@ -866,7 +862,8 @@ footer {
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 3em; }
     main #booking h1 {
       min-width: 100%; }
     main #booking p {
@@ -916,7 +913,7 @@ footer {
       margin: auto 0;
       font-size: 1.2em; }
     main #events #private, main #events #wedding {
-      margin-bottom: 4em; }
+      margin-bottom: 5em; }
       main #events #private .textprivate, main #events #wedding .textprivate {
         width: 80%;
         display: -webkit-flex;
@@ -1052,8 +1049,6 @@ footer {
       width: 100%; } }
 
 @media only screen and (min-width: 62em) {
-  * {
-    outline: 1px solid blue; }
   .bars {
     display: none; }
   header #nav {
@@ -1194,7 +1189,7 @@ footer {
     main #logReg h1 {
       font-size: 2.5em; }
   main #addReview {
-    min-height: 60vh; }
+    min-height: 45vh; }
     main #addReview h1 {
       font-size: 2.5em; }
     main #addReview h2 {
@@ -1222,7 +1217,7 @@ footer {
   main #adminPage .removeUser .userInfo a {
     font-size: 1.7em; }
   main section:nth-child(2) {
-    min-height: 100vh; }
+    min-height: 80vh; }
     main section:nth-child(2) #text {
       min-width: 50%;
       margin: auto;

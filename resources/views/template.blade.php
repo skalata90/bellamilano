@@ -5,7 +5,7 @@
     	<meta charset="UTF-8">
     	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+    	<link rel="stylesheet" href="{{asset('css/animate.css')}}">
     	<link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{asset('css/JiSlider.css')}}">

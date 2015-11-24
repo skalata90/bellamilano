@@ -7,7 +7,7 @@
             </section>
 
             <div id="reviews">
-                <div class="heading1"><h1>Add your reviews</h1><img src="img/span.fw.png" class="graf">
+                <div class="heading1"><h1>Add your review</h1><img src="{{asset('img/span.fw.png')}}" class="graf">
                     @if(Auth::check())
                     <a href="{{url('reviews/create')}}">Click here to add a review</a></div>
                     @else

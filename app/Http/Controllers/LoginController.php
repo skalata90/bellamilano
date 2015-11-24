@@ -35,7 +35,7 @@ class LoginController extends Controller
 
     public function logout(\Illuminate\Contracts\Auth\Guard $auth){
         $auth->logout();
-        return redirect("login");
+        return redirect("index");
     	
     }
 }
