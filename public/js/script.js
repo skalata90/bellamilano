@@ -74,168 +74,176 @@ $('#gallery').lightCarousel();
 
 //========================== MAPS =============================
 
-	var style = 
-					[
-					    {
-					        "featureType": "administrative",
-					        "elementType": "all",
-					        "stylers": [
-					            {
-					                "visibility": "on"
-					            },
-					            {
-					                "lightness": 33
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "landscape",
-					        "elementType": "all",
-					        "stylers": [
-					            {
-					                "color": "#f2e5d4"
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "poi.park",
-					        "elementType": "geometry",
-					        "stylers": [
-					            {
-					                "color": "#c5dac6"
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "poi.park",
-					        "elementType": "labels",
-					        "stylers": [
-					            {
-					                "visibility": "on"
-					            },
-					            {
-					                "lightness": 20
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "road",
-					        "elementType": "all",
-					        "stylers": [
-					            {
-					                "lightness": 20
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "road.highway",
-					        "elementType": "geometry",
-					        "stylers": [
-					            {
-					                "color": "#c5c6c6"
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "road.arterial",
-					        "elementType": "geometry",
-					        "stylers": [
-					            {
-					                "color": "#e4d7c6"
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "road.local",
-					        "elementType": "geometry",
-					        "stylers": [
-					            {
-					                "color": "#fbfaf7"
-					            }
-					        ]
-					    },
-					    {
-					        "featureType": "water",
-					        "elementType": "all",
-					        "stylers": [
-					            {
-					                "visibility": "on"
-					            },
-					            {
-					                "color": "#acbcc9"
-					            }
-					        ]
-					    }
-					]
+	function initMap(){
+
+		var style = 
+						[
+						    {
+						        "featureType": "administrative",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "on"
+						            },
+						            {
+						                "lightness": 33
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "landscape",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "color": "#f2e5d4"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "poi.park",
+						        "elementType": "geometry",
+						        "stylers": [
+						            {
+						                "color": "#c5dac6"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "poi.park",
+						        "elementType": "labels",
+						        "stylers": [
+						            {
+						                "visibility": "on"
+						            },
+						            {
+						                "lightness": 20
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "lightness": 20
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.highway",
+						        "elementType": "geometry",
+						        "stylers": [
+						            {
+						                "color": "#c5c6c6"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.arterial",
+						        "elementType": "geometry",
+						        "stylers": [
+						            {
+						                "color": "#e4d7c6"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.local",
+						        "elementType": "geometry",
+						        "stylers": [
+						            {
+						                "color": "#fbfaf7"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "on"
+						            },
+						            {
+						                "color": "#acbcc9"
+						            }
+						        ]
+						    }
+						]
 
 
-	var ferry = {lat: -36.846335, lng: 174.766639};
+		var ferry = {lat: -36.846335, lng: 174.766639};
+		// var home = {lat: -36.903911 , lng: 174.914957};
 
-  	// Create a map object and specify the DOM element for display.
-  	var map = new google.maps.Map(document.getElementById('map'), {
-    	center: ferry,
-    	scrollwheel: false,
-    	styles: style,
-    	zoom: 16
-  	});
-
-
-  	var marker = new google.maps.Marker({
-  		map: map,
-        position: ferry
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: '<div id="content">We are here</div>'
-    });
-
-    infowindow.open(map, marker);
+	  	// Create a map object and specify the DOM element for display.
+	  	var map = new google.maps.Map(document.getElementById('map'), {
+	    	center: ferry,
+	    	scrollwheel: false,
+	    	styles: style,
+	    	zoom: 16
+	  	});
 
 
-  	if(geo_position_js.init()){
+	  	var marker = new google.maps.Marker({
+	  		map: map,
+	        position: ferry
+	    });
 
-       geo_position_js.getCurrentPosition(
-        function(position){
+	    var infowindow = new google.maps.InfoWindow({
+	        content: '<div id="content">We are here</div>'
+	    });
 
-            var home = {lat: position.coords.latitude, lng: position.coords.longitude};
-            var directionsDisplay = new google.maps.DirectionsRenderer({
-                map: map
-            });
-
-            var request = {
-			    destination: ferry,
-			    origin: home,
-			    travelMode: google.maps.TravelMode.DRIVING
-			};
-
-			var directionsService = new google.maps.DirectionsService();
-                directionsService.route(request, function(response, status) {
-
-                if (status == google.maps.DirectionsStatus.OK) {
-                    // Display the route on the map.
-                    directionsDisplay.setDirections(response);
-                }
-            });
-
-            var marker2 = new google.maps.Marker({
-                position: home,
-            });
-
-            // To show the info window as soon as you load the page
-           
-            infowindow1.open(map, marker2);
+	    infowindow.open(map, marker);
 
 
-        },
-	        function(error){
+	  	if(geo_position_js.init()){
 
-	            console.log(error); 
+	       geo_position_js.getCurrentPosition(
+	        function(position){
+	            console.log(position);
 
-	        });
+	            var home = {lat: position.coords.latitude, lng: position.coords.longitude};
+	            var directionsDisplay = new google.maps.DirectionsRenderer({
+	                map: map
+	            });
 
-    }
-    else{
-       console.log("Functionality not available");
-    }
+	            var request = {
+				    destination: ferry,
+				    origin: home,
+				    travelMode: google.maps.TravelMode.DRIVING
+				};
+
+				var directionsService = new google.maps.DirectionsService();
+	                directionsService.route(request, function(response, status) {
+
+	                if (status == google.maps.DirectionsStatus.OK) {
+	                    // Display the route on the map.
+	                    directionsDisplay.setDirections(response);
+	                }
+	            });
+
+	            var infowindow1 = new google.maps.InfoWindow({
+	                content: '<div id="content">You are here</div>'
+	            });
+
+	            var marker2 = new google.maps.Marker({
+	                position: home,
+	            });
+
+	            // To show the info window as soon as you load the page
+	           
+	            infowindow1.open(map, marker2);
+
+
+	        },
+		        function(error){
+
+		            console.log(error); 
+
+		        });
+
+	    }else{
+	       console.log("Functionality not available");
+	    }
+	}
 
 });
