@@ -73,10 +73,9 @@
             <p>Copyright © 2015 Bella Milano. Design by <a href="">Kiril Zhelyazkov</a></p>
         </footer>
      
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI70QvYZy_lrSASsqVsgn8teLLmmBcy6M&callback=initMap" async defer></script>
-
-    <script src="{{asset('js/geo-min.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI70QvYZy_lrSASsqVsgn8teLLmmBcy6M&callback=initMap" async defer></script>
+    <script src="{{asset('js/geo-min.js')}}"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
     <script src="{{asset('js/jquery.mask.js')}}"></script> 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

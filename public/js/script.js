@@ -72,9 +72,11 @@ $('#gallery').lightCarousel();
 
 	});     
 
+});
+
 //========================== MAPS =============================
 
-	function initMap(){
+function initMap(){
 
 		var style = 
 						[
@@ -245,5 +247,3 @@ $('#gallery').lightCarousel();
 	       console.log("Functionality not available");
 	    }
 	}
-
-});
